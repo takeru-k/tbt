@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TBT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="l-header js-header">
+      <div class="l-header__wrap">
+        <div class="l-header__logo">
+          <a href="index.html">
+            <img src="images/header/logo.png" alt="" />
+          </a>
+        </div>
+        <!-- /.l-header__logo -->
+
+        <nav class="l-header__nav">
+          <ul class="l-header__menu">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="service.html">サービス</a></li>
+            <li><a href="story.html">ストーリー</a></li>
+            <li><a href="company.html">会社案内</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <!-- /.l-header__menu -->
+        </nav>
+        <button
+          type="button"
+          class="c-hamburger js-btn"
+          aria-label="Navigation"
+        >
+          <span class="c-hamburger__line"></span
+          ><!-- /.c-hamburger__line --></button
+        ><!-- /.c-hamburger -->
+      </div>
+      <!-- /.l-header__wrap -->
+    </header>
+    <!-- /.l-header -->
+
+    <div class="l-page-title">
+      <span>contact</span>
+      <h1>お問い合わせ</h1>
+    </div>
+    <!-- /.l-page-title -->
+
+    <div class="l-block">
+      <div class="l-container">
+        <div class="p-contact">
+          <p>
+            お仕事に関するご質問・ご相談、お見積もりなど、お気軽にお問い合わせください。
+          </p>
+          <p>お急ぎの方はお電話ください。</p>
+
+          <div class="p-contact__tel">
+            <a href="tel:0176-58-6658"><small>tel. </small>0176-58-6658</a>
+            <span>受付時間: 平日9:00〜17:00</span>
+          </div>
+          <!-- /.p-contact__tel -->
+
+          <p>
+            メールでのお問い合わせは、下記フォームへ必要事項をご記入いただき送信してください。
+          </p>
+          <p>※<span class="require">*</span>が付いている項目は必須です。</p>
+
+          <div class="p-contact__form">
+            <div class="c-form">
+              <table class="c-form__table">
+                <tbody>
+                  <!-- 会社名・屋号 -->
+                  <tr>
+                    <th>
+                      <label for="company" class="c-form__label">
+                        会社名・屋号<span class="require">*</span>
+                      </label>
+                    </th>
+                    <td>
+                      <div class="c-form__field">
+                        <input
+                          type="text"
+                          id="company"
+                          name="company"
+                          required
+                        />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- お名前 -->
+                  <tr>
+                    <th>
+                      <label for="name" class="c-form__label">お名前</label>
+                    </th>
+                    <td>
+                      <div class="c-form__field">
+                        <input type="text" id="name" name="name" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- メールアドレス -->
+                  <tr>
+                    <th>
+                      <label for="email" class="c-form__label">
+                        メールアドレス<span class="require">*</span>
+                      </label>
+                    </th>
+                    <td>
+                      <div class="c-form__field">
+                        <input type="email" id="email" name="email" required />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- 電話番号 -->
+                  <tr>
+                    <th>
+                      <label for="tel" class="c-form__label">電話番号</label>
+                    </th>
+                    <td>
+                      <div class="c-form__field">
+                        <input type="tel" id="tel" name="tel" />
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- お問い合わせ内容 -->
+                  <tr>
+                    <th>
+                      <label for="message" class="c-form__label">
+                        お問い合わせ内容<span class="require">*</span>
+                      </label>
+                    </th>
+                    <td>
+                      <div class="c-form__field">
+                        <textarea
+                          id="message"
+                          name="message"
+                          cols="30"
+                          rows="10"
+                          required
+                        ></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- /.c-form__table -->
+
+              <!-- プライバシーポリシー -->
+              <div class="c-form__privacy-box">
+                <p>
+                  <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    プライバシーポリシー
+                  </a>
+                  に同意して、送信してください。
+                </p>
+              </div>
+
+              <!-- 送信ボタン -->
+              <div class="c-from__button">
+                <button type="submit" class="c-from__button-action">
+                  この内容で送信する
+                </button>
+              </div>
+            </div>
+            <!-- /.c-form -->
+          </div>
+          <!-- /.p-contact__form -->
+        </div>
+        <!-- /.p-contact -->
+      </div>
+      <!-- /.l-container -->
+    </div>
+    <!-- /.l-block -->
+
+    <div class="l-footer">
+      <div class="l-inner">
+        <div class="l-footer__head">
+          <div class="l-footer__about">
+            <h1 class="l-footer__logo">株式会社Tree Blue Trees</h1>
+            <!-- /.l-footer__logo -->
+
+            <ul class="l-footer__info">
+              <li>〒039-2407<br />青森県上北郡上北郡東北町旭南2丁目403-1-1</li>
+              <li>tel.<a href="tel:0176586658">017-656-658</a></li>
+            </ul>
+            <!-- /.l-footer__info -->
+          </div>
+          <!-- /.l-footer__about -->
+        </div>
+        <!-- /.l-footer__head -->
+
+        <div class="l-footer__content">
+          <ul class="l-footer__nav">
+            <li><a href="sitemap.html">サイトマップ</a></li>
+            <li><a href="policy.html">個人情報保護方針</a></li>
+          </ul>
+          <!-- /.l-footer__nav -->
+
+          <p class="l-footer__copy">&copy;tbt, inc.</p>
+          <!-- /.l-footer__copy -->
+        </div>
+        <!-- /.l-footer__content -->
+      </div>
+      <!-- /.l-inner -->
+    </div>
+    <!-- /.l-footer -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
