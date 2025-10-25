@@ -98,3 +98,15 @@ function initAccordion() {
     });
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".l-header");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      header.classList.add("is-scrolled");
+    } else {
+      header.classList.remove("is-scrolled");
+    }
+  });
+});
