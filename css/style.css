@@ -1186,6 +1186,16 @@ color: var(--main-color);
   margin-top: 12px;
 }
 
+.p-member__career{
+  margin-top: 16px;
+}
+
+.p-member__career ul{
+  margin-top: 4px;
+  display: inline-grid;
+  row-gap: 6px;
+}
+
 @media (min-width: 1024px){
   .p-member{
     row-gap: 48px;
