@@ -110,3 +110,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// スライドショーの設定
+document.addEventListener("DOMContentLoaded", () => {
+  const mySwiper = new Swiper(".swiper-container-bg", {
+    // スライドショーの動作設定
+    loop: true, // ループ再生
+    effect: "fade", // フェードエフェクトを使用
+    speed: 1000, // トランジション速度 (1秒)
+
+    // 自動再生の設定
+    autoplay: {
+      delay: 2000, // 2秒間隔
+      disableOnInteraction: false, // ユーザーが操作しても自動再生を止めない
+    },
+  });
+
+  console.log("Swiperスライドショーが開始されました。");
+});
