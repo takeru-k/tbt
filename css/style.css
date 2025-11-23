@@ -1439,7 +1439,7 @@ div.wpcf7 .wpcf7-spinner {
 
 .p-service-menu__item{
   background: var(--bg-color);
-  padding: 24px;
+  padding: 24px 16px;
   border-radius: 8px;
 }
 
