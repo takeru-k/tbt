@@ -1808,3 +1808,16 @@ div.wpcf7 .wpcf7-spinner {
     padding-top: 4px;
   }
 }
+
+
+.fade-in-item {
+  opacity: 0; /* 透明 */
+  transform: translateY(30px); /* 下から30px移動 */
+  transition: opacity 1s ease-out, transform .8s ease-out; /* アニメーションの設定 */
+}
+
+/* アニメーション後の状態（JavaScriptで追加するクラス） */
+.fade-in-item.is-visible {
+    opacity: 1; /* 不透明 */
+    transform: translateY(0); /* 元の位置に戻る */
+}

@@ -128,3 +128,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Swiperスライドショーが開始されました。");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 監視対象の要素
+  const fadeInItems = document.querySelectorAll(".fade-in-item");
+
+  // Intersection Observer の設定
+  const observerOptions = {
+    root: null, // ビューポートをルート（監視対象）とする
+    rootMargin: "0px", // マージン
+    threshold: 0.2, // 要素が20%以上見えたら発火
+  };
+
+  // Intersection Observer のインスタンスを作成
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      // isIntersectingがtrueなら画面内に入ったことを意味する
+      if (entry.isIntersecting) {
+        // is-visible クラスを追加
+        entry.target.classList.add("is-visible");
+        // 一度アニメーションしたら監視を終了する
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // 各要素を監視対象に設定
+  fadeInItems.forEach((item) => {
+    observer.observe(item);
+  });
+});
