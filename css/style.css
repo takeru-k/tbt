@@ -807,6 +807,10 @@
   margin-top: 40px;
 }
 
+.l-footer__badge {
+  margin-top: 40px;
+}
+
 .l-footer__nav {
   display: grid;
   gap: 16px;
@@ -815,7 +819,8 @@
 .l-footer__copy {
   color: #969696;
   font-family: var(--english-font);
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .l-footer__link {
@@ -833,8 +838,17 @@
     padding-bottom: 32px;
   }
 
+  .l-footer__about {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .l-footer__info {
     margin-top: 32px;
+  }
+
+  .l-footer__badge {
+    margin-top: 0;
   }
 
   .l-footer__content {
