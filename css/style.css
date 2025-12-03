@@ -1169,7 +1169,7 @@
 .p-member ul {
   display: grid;
   row-gap: 4px;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .p-member__career {
